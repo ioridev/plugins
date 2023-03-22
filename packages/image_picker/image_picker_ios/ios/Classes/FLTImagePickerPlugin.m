@@ -229,10 +229,7 @@ typedef NS_ENUM(NSInteger, ImagePickerClassType) { UIImagePickerClassType, PHPic
   UIImagePickerController *imagePickerController = [self createImagePickerController];
   imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
   imagePickerController.delegate = self;
-  imagePickerController.mediaTypes = @[
-    (NSString *)kUTTypeMovie, (NSString *)kUTTypeAVIMovie, (NSString *)kUTTypeVideo,
-    (NSString *)kUTTypeMPEG4
-  ];
+  imagePickerController.mediaTypes = @[(NSString *)kUTTypeMovie];
   imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
   imagePickerController.videoExportPreset = AVAssetExportPresetPassthrough;
 
